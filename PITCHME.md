@@ -37,10 +37,10 @@ Anything you learn today should never be used without explicit permission. Do NO
 * The malicious content sent to the web browser often takes the form of a segment of JavaScript, but may also include HTML, Flash, or any other type of code that the browser may execute. 
 * The variety of attacks based on XSS is almost limitless, but they commonly include transmitting private data, like cookies or other session information, to the attacker, redirecting the victim to web content controlled by the attacker, or performing other malicious operations on the user's machine under the guise of the vulnerable site.
 +++
-* Types
-..* [Stored](https://www.owasp.org/index.php/Testing_for_Stored_Cross_site_scripting_(OTG-INPVAL-002))
-..* [Reflective](https://www.owasp.org/index.php/Testing_for_Reflected_Cross_site_scripting_(OTG-INPVAL-001))
-..* [DOM Based](https://www.owasp.org/index.php/DOM_Based_XSS)
+Types
+* [Stored](https://www.owasp.org/index.php/Testing_for_Stored_Cross_site_scripting)
+* [Reflective](https://www.owasp.org/index.php/Testing_for_Reflected_Cross_site_scripting)
+* [DOM Based](https://www.owasp.org/index.php/DOM_Based_XSS)
 ---
 ### Stored XSS
 Stored XSS occurs when a web application gathers input from a user which might be malicious, and then stores that input in a data store for later use. 
@@ -60,12 +60,12 @@ Reflective XSS occurs when an attacker injects browser executable code within a 
 Blog posts, comments on blogs, forum posts are all examples of where malicious code can be stored (Stored). URLs are useful when doing Reflective XSS, if there is a vulnerability in the URL it can be changed, shortened and emailed to a victim or posted to a website.
 +++
 <img src="./emailalert.png" height=500>
-http://www.example.com/index.php?name=guest<script>alert('Your data belong to us')</script>
+`http://www.example.com/index.php?name=guest<script>alert('Your data belong to us')</script>`
 +++
-`<script>alert(document.cookie)</script>`
-`<body onload=alert('Pwned')>`
-`<b onmouseover=alert('Gotcha!')>click me!</b>`
-`<img src="http://url.to.file.which/not.exist" onerror=alert(document.cookie);>`
+* `<script>alert(document.cookie)</script>`
+* `<body onload=alert('Pwned')>`
+* `<b onmouseover=alert('Gotcha!')>click me!</b>`
+* `<img src="http://url.to.file.which/not.exist" onerror=alert(document.cookie);>`
 ---
 ### Interactive Hacking Session!
 Go to https://xss-game.appspot.com/ 
