@@ -1,4 +1,4 @@
-## Lunch And Learn - How to Hack
+## How to Hack
 ---
 ### Agenda 
 * Types of Hacking
